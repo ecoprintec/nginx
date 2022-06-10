@@ -20,3 +20,8 @@ helm upgrade nginx charts/nginx/ \
     --set ingress.enabled=true \
     --set ingress.className=nginx
 ```
+
+## Delete nginx using helm chart
+```
+helm uninstall nginx -n nginx
+```
